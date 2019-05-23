@@ -34,7 +34,7 @@ class Game extends React.Component {
         clearInterval(this.interval)
     }
 
-    raiseMole(){    
+    raiseMole(){
         const upState = this.state.activeState.slice();
         if(upState.every((el)=>{ return el === true})){
             console.log("Board full returning")
